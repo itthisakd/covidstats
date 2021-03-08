@@ -50,8 +50,6 @@ function App() {
     dailyCases[date] = Number(daily.NewConfirmed);
   }
 
-  console.log(Object.entries(dailyCases));
-
   return (
     <div className="App">
       <header
@@ -103,7 +101,6 @@ function App() {
         <div>
           {Object.entries(dailyCases).map((m) => {
             let month = m[0].slice(3, 10);
-            console.log(month);
             return month === submitted ? (
               <div>
                 {m[0]} : {m[1]} cases

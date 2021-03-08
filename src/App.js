@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
-// import styled from "@emotion/styled";
 
 function App() {
   const [data, setData] = useState({});
